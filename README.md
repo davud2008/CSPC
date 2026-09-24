@@ -9,3 +9,4 @@ Create the environment for a given lab:
 ```bash
 conda env create -f PW<n>/Lab\ <X>/environment.yml
 conda activate cspc
+- Branching practice complete.
