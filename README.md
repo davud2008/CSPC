@@ -43,3 +43,16 @@ conda activate cspc
 *Snakemake:*
 - The Snakemake pipeline builds figure.png from decay_observed.csv by running plot.py.
 - It rebuilds the figure when the input or script changes and does nothing when everything is up to date.
+## PW2 --- Lab A: Motion from Tracking Data
+
+*Mean acceleration:*  
+The measured mean acceleration was approximately -8.58 m/s², which is reasonably close to the expected gravitational acceleration of -9.81 m/s².
+
+*Noise observation:*  
+The acceleration was much noisier than the position because differentiation amplifies noise in the measured data.
+
+*Integration result:*  
+After integrating the noisy acceleration back to velocity and then position, the recovered position was close to the original position. The largest difference was approximately 0.785 m, which is within about 1 metre.
+
+*Plot:*  
+The motion.png figure shows position, velocity, and acceleration as three stacked panels. A dashed line at -9.81 m/s² is shown on the acceleration panel.
