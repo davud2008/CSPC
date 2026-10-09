@@ -56,3 +56,32 @@ After integrating the noisy acceleration back to velocity and then position, the
 
 *Plot:*  
 The motion.png figure shows position, velocity, and acceleration as three stacked panels. A dashed line at -9.81 m/s² is shown on the acceleration panel.
+
+### PW2 — Lab B
+
+#### Part 2A — Easy convex function
+
+Gradient Descent, Newton's method, and SLSQP all found the minimum near x = 3, with f(x) = 1.
+
+#### Part 2B — Harder landscape
+
+The methods can give different results depending on the starting point. Newton's method from x0 = 0 found a stationary point near x = 0.1699, where the second derivative is negative, so it is a local maximum. From x0 = 2, Newton's method found a local minimum near x = 1.1309.
+
+The starting point and optimization method affect the result.
+### Part 4 — Chemical Equilibrium
+
+The equilibrium extent was found using Newton's method and SLSQP. Both methods gave approximately the same result: x = 0.66385.
+
+The equilibrium amounts are:
+- H2 = 0.33615 mol
+- I2 = 0.33615 mol
+- HI = 1.32770 mol
+
+The equilibrium composition was calculated using H2 = 1 - x, I2 = 1 - x, and HI = 2x. The plot was saved as equilibrium.png.
+#### Part 5 — Titration Analysis 
+The equivalence point was estimated by calculating the slope of the pH curve using numpy.gradient(pH, V).
+
+- Equivalence point: *50.0 mL*
+- Maximum slope: *4.0*
+
+The pH curve and its slope were plotted, and the figure was saved as titration.png.
